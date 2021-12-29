@@ -1,6 +1,6 @@
 from setuptools import setup
 
-__version__ = '0.1.0.0'
+__version__ = '0.1.0.1'
 setup(
     name='drremote',
     version=__version__,

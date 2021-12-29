@@ -1,5 +1,6 @@
 from pathlib import Path
 import logging
+import sys
 
 
 class OutputWriter:
@@ -10,6 +11,7 @@ class OutputWriter:
 
     def error(self, msg: str):
         logging.error(msg)
+        print(msg, file=sys.stderr)
         with open(self.outfile, "w") as f:
             f.write("Error\n" + msg)
             f.flush()
