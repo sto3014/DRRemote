@@ -2,7 +2,7 @@ from __future__ import absolute_import
 
 
 def run_main():
-    from drremote.drremote import main
+    from .drremote import main
     main()
 
 

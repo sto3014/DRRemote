@@ -3,12 +3,12 @@ SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
 source "${SCRIPT_DIR}"/build.env
 
 cd ~/Projekte/${PROJECT} || exit 1
-export PATH=`echo $PATH | tr ":" "\n" |  grep -v "venv" | tr "\n" ":"`
+
 ./clean.sh
 ./package.sh
-
-# Install global
-# pip3 install dist/${PROJECT}*.whl --force-reinstall
-
+python3 -m pip install --upgrade twine
+# deploy
+# user:__token__
+python3 -m twine upload --repository pypi dist/*
 
 

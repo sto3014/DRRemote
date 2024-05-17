@@ -15,3 +15,9 @@ Installation see project description.
 ### Changed
 ### Fixed
  
+## [0.1.0.5] - 2024-05-15
+
+### Added
+### Changed
+* Update requirements
+### Fixed

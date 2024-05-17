@@ -8,11 +8,12 @@ here = path.abspath(path.dirname(__file__))
 with open('README.md', encoding='utf-8') as f:
     long_description = f.read()
 
-__version__ = '0.1.0.4'
+__version__ = '0.1.0.5'
 setup(
     name='drremote',
     version=__version__,
-    packages=['drremote'],
+    packages=find_packages(where='src'),
+    package_dir={'': 'src'},
     url='',
     license='MIT',
     author='Dieter Stockhausen',
