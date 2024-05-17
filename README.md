@@ -12,12 +12,12 @@ LRDavinci is a Lightroom plug-in for Davinci Resolve Studio
   * name of timeline
 
 ## Requirements
-* Python 3.6 (not more, not less due to Davinci Resolve restrictions)  
+* Python ~= 3.12 
 * Davinci Resolve Studio (license is needed for Davinci Resolve's Python API).
 
 ## Installation
 1. [Python](https://www.python.org/downloads/)  
-    You need to install version 3.6.x.
+    You need to install version ~= 3.12
 2. PIP 
    * Windows
         * python -m pip install --upgrade pip
