@@ -8,7 +8,7 @@ export PATH=`echo $PATH | tr ":" "\n" |  grep -v "venv" | tr "\n" ":"`
 ./package.sh
 
 # Install global
-# pip3 install dist/${PROJECT}*.whl --force-reinstall
+pip3 install dist/${PROJECT}*.whl --force-reinstall
 
 
 
